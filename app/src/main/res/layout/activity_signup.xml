@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="presenter"
+            type="com.healthproviderapp.ui.signup.SignupPresenter" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:theme="@style/TextInputLayoutWithPrimaryColor"
+                        app:hintEnabled="false"
+                        app:hintTextAppearance="@style/CustomHintEnabled"
+                        app:passwordToggleContentDescription="">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edUserName"
+                            style="@style/regularTextWithRomanStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/label_user_name"
+                            android:imeOptions="actionNext"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:theme="@style/TextInputLayoutWithPrimaryColor"
+                        app:hintEnabled="false"
+                        app:hintTextAppearance="@style/CustomHintEnabled"
+                        app:passwordToggleContentDescription="">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edAge"
+                            style="@style/regularTextWithRomanStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/label_age"
+                            android:imeOptions="actionNext"
+                            android:inputType="number" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!--                <include layout="@layout/app_line_layout" />-->
+
+
+                   <!-- <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:theme="@style/TextInputLayoutWithPrimaryColor"
+                        app:hintEnabled="false"
+                        app:hintTextAppearance="@style/CustomHintEnabled"
+                        app:passwordToggleContentDescription="">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edGender"
+                            style="@style/regularTextWithRomanStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="@string/label_gender"
+                            android:imeOptions="actionNext"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+-->
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:text="@string/label_gender"/>
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/myRadioGroup"
+                        android:orientation="horizontal"
+                        android:checkedButton="@+id/sound" >
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rbMale"
+                            android:checked="true"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:text="male" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rbFemale"
+                            android:text="female" />
+
+                    </RadioGroup>
+                    <!--  <androidx.appcompat.widget.AppCompatImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          app:srcCompat="@drawable/ic_downarrow" />-->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextInputLayoutWithPrimaryColor"
+                        app:hintEnabled="false"
+                        app:hintTextAppearance="@style/CustomHintEnabled"
+                        app:passwordToggleContentDescription="">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edOccupation"
+                            style="@style/regularTextWithRomanStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/label_occupation"
+                            android:imeOptions="actionNext"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:theme="@style/TextInputLayoutWithPrimaryColor"
+                        app:hintEnabled="false"
+                        app:hintTextAppearance="@style/CustomHintEnabled"
+                        app:passwordToggleContentDescription="">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edFatherName"
+                            style="@style/regularTextWithRomanStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/label_father_or_husband_name"
+                            android:imeOptions="actionNext"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:theme="@style/TextInputLayoutWithPrimaryColor"
+                        app:hintEnabled="false"
+                        app:hintTextAppearance="@style/CustomHintEnabled"
+                        app:passwordToggleContentDescription="">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edAddress"
+                            style="@style/regularTextWithRomanStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/label_address"
+                            android:imeOptions="actionNext"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:theme="@style/TextInputLayoutWithPrimaryColor"
+                        app:hintEnabled="false"
+                        app:hintTextAppearance="@style/CustomHintEnabled"
+                        app:passwordToggleContentDescription="">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edEmail"
+                            style="@style/regularTextWithRomanStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@android:color/transparent"
+                            android:hint="Email"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!--                <include layout="@layout/app_line_layout" />-->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:theme="@style/TextInputLayoutWithPrimaryColor"
+                        app:hintEnabled="false"
+                        app:hintTextAppearance="@style/CustomHintEnabled"
+                        app:passwordToggleContentDescription="">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edPassword"
+                            style="@style/regularTextWithRomanStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/label_password"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPassword" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!--                <include layout="@layout/app_line_layout" />-->
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnSignup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:text="@string/action_sign_up"
+                        android:textAllCaps="false"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">HealthProviderApp</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_up">Sign up</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">Login failed</string>
+    <string name="no_patients_found">No Patients Found</string>
+    <string name="label_user_name">Username</string>
+    <string name="label_age">Age</string>
+    <string name="label_occupation">Occupation</string>
+    <string name="label_father_or_husband_name">Father/Husband name</string>
+    <string name="label_address">Address</string>
+    <string name="label_gender">Gender</string>
+    <string name="label_password">Password</string>
+    <string name="label_next">Next</string>
+    <string name="label_provide_details">Provide Details</string>
+    <string name="hint_enter_diagnosis">Enter diagnosis</string>
+    <string name="hint_enter_symptoms">Enter symptoms</string>
+    <string name="hint_enter_prescription">Enter prescription</string>
+    <string name="label_please_wait">Please wait page is loading</string>
+    <string name="label_success_inserted_records">Records added successfully</string>
+    <string name="label_user_not_exist">User does not exists</string>
+    <string name="label_enter_visiting_reason">Please tell us the reason for visiting health provider</string>
+</resources>

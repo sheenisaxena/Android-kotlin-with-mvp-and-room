@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ColdStart" parent="AppTheme">
+        <item name="android:windowBackground">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:fontFamily">@font/avenirltstd_roman</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/avenirltstd_roman</item>
+    </style>
+
+    <style name="HeadingTextWithRomanStyle" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textSize">@dimen/_23sdp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/avenirltstd_roman</item>
+    </style>
+
+    <style name="HeadingTextWithAvenirMediumStyle" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textSize">@dimen/_23sdp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/avenirltstd_medium</item>
+    </style>
+
+    <style name="regularTextWithRomanStyle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/offwhite</item>
+        <item name="android:fontFamily">@font/avenirltstd_roman</item>
+    </style>
+
+    <style name="largeTextWithMediumStyle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/avenirltstd_medium</item>
+    </style>
+
+    <style name="regularTextWithMediumStyle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/avenirltstd_medium</item>
+    </style>
+
+    <style name="smallTextWithBookStyle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/avenirltstd_book</item>
+    </style>
+
+    <style name="largeTextWithBookStyle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/_18sdp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/avenirltstd_book</item>
+    </style>
+
+    <style name="regularTextWithBookStyle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/avenirltstd_book</item>
+    </style>
+
+    <style name="smallTextWithMediumStyle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/avenirltstd_medium</item>
+    </style>
+
+    <style name="smallTextWithRomanStyle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/avenirltstd_roman</item>
+    </style>
+
+    <style name="mediumTextWithRomanStyle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/avenirltstd_roman</item>
+    </style>
+
+    <style name="TextInputLayoutWithPrimaryColor" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:colorPrimary">@color/black</item>
+        <item name="android:colorPrimaryDark">@color/black</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+    </style>
+
+    <style name="TextInputLayoutTextColor" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:colorPrimary">@color/black</item>
+        <item name="android:colorPrimaryDark">@color/black</item>
+        <item name="android:textColorHint">@color/black_light</item>
+    </style>
+
+    <style name="CustomHintEnabled" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/offwhite</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+</resources>
